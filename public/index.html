@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SailDrone</title>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      {{ message }}
+    </div>
+    <div id="loginForm">
+      <p>{{ status }} </p>
+      <form>
+        <input v-model="username" type="text" placeholder="Username" />
+        <input v-model="password" type="password" placeholder="Password" />
+        <input v-on:click="loginUser" type="submit" value="Login" />
+      </form>
+    </div>
+    <script src="/dist/app.bundle.js"></script>
+  </body>
+</html>
